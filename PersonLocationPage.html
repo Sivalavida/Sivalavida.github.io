@@ -47,7 +47,7 @@
         center: centerOfSingapore
       });
       var marker = new google.maps.Marker({
-        position: {lat: getJsonFromUrl().lat, lng: getJsonFromUrl().lon},
+        position: {lat: parseFloat(getJsonFromUrl().lat), lng: parseFloat(getJsonFromUrl().lon)},
         animation: google.maps.Animation.DROP,
         map: map
       });
