@@ -716,6 +716,10 @@ Resume Timeline
     background-color: #e1e1e1;
 }
 
+.timeline-body {
+    text-align: left;
+}
+
 .timeline>li {
     position: relative;
     margin-bottom: 50px;
