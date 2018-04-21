@@ -324,6 +324,59 @@ jQuery(function ($) {
 });
 
 
+// model
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+IMAGES = [["11.png", "12.png", "13.png", "14.png", "15.png", "16.png"], ["21.jpg"], ["31.jpeg"]];
+function initSlides(n){
+    imagesForModel = IMAGES[n+1];
+    for 
+    var slides = document.getElementsByClassName("mySlides"); 
+    var modelContent = document.getElementById
+
+    for (i=0; i<imagesForModel.length; i++){
+        var s = "<div class=\"mySlides\"> <div class=\"numbertext\">1 / " + String.parseInt(i+1) + " </div> <img src=\"" + imagesForModel[i] + "\" style=\"width:100%\"> </div>"
+        modelContent.appendChild(s);
+    }
+
+
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+
 
 
 
