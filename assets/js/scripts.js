@@ -193,7 +193,97 @@ jQuery(function ($) {
     // -------------------------------------------------------------
 
     (function () {
-      $('.image-link').magnificPopup({
+      $('.image-link1').magnificPopup({
+        items: [
+      {
+        src: "assets/images/works/11.png",
+        title: 'NUS Bus App'
+      },
+      {
+        src: "assets/images/works/12.png",
+        title: 'List of Busstops'
+      },
+      {
+        src: "assets/images/works/13.png", // Dynamically created element
+        title: 'NUS Shuttle Bus Timings'
+      },
+      {
+        src: "assets/images/works/14.png", // HTML string
+        title: 'Bus Routes'
+      },
+      {
+        src: "assets/images/works/15.png", // CSS selector of an element on page that should be used as a popup
+        title: 'Public Bus Timings'
+      },
+      {
+        src: "assets/images/works/16.png", // CSS selector of an element on page that should be used as a popup
+        title: 'MRT and BUS timing Schedule'
+      }
+    ],
+
+        gallery: {
+          enabled: true
+        },
+        removalDelay: 300, // Delay in milliseconds before popup is removed
+        mainClass: 'mfp-with-zoom', // this class is for CSS animation below
+        type:'image'
+
+      });
+
+    }());
+
+    (function () {
+      $('.image-link2').magnificPopup({
+        items: [
+      {
+        src: "assets/images/works/21.jpg",
+        title: 'AnyFood WebApp - a surprise food delivery platform'
+      },
+      {
+        src: "assets/images/works/22.png",
+        title: 'Landing page'
+      },
+      {
+        src: "assets/images/works/23.jpg", // Dynamically created element
+        title: 'Food Options'
+      }
+    ],
+
+        gallery: {
+          enabled: true
+        },
+        removalDelay: 300, // Delay in milliseconds before popup is removed
+        mainClass: 'mfp-with-zoom', // this class is for CSS animation below
+        type:'image'
+
+      });
+
+    }());
+
+    (function () {
+      $('.image-link3').magnificPopup({
+        items: [
+      {
+        src: "assets/images/works/31.jpeg",
+        title: 'ShareIt WebApp - a platform to loan and borrow items'
+      },
+      {
+        src: "assets/images/works/32.png",
+        title: 'Available Categories'
+      },
+      {
+        src: "assets/images/works/33.png", // Dynamically created element
+        title: 'Some of the existing Items'
+      },
+      {
+        src: "assets/images/works/34.png", // HTML string
+        title: 'Item Display Page'
+      },
+      {
+        src: "assets/images/works/35.png", // CSS selector of an element on page that should be used as a popup
+        title: 'Profile Page'
+      }
+    ],
 
         gallery: {
           enabled: true
@@ -324,58 +414,58 @@ jQuery(function ($) {
 });
 
 
-// model
-function openModal() {
-  document.getElementById('myModal').style.display = "block";
-}
+// // model
+// function openModal() {
+//   document.getElementById('myModal').style.display = "block";
+// }
 
-function closeModal() {
-  document.getElementById('myModal').style.display = "none";
-}
+// function closeModal() {
+//   document.getElementById('myModal').style.display = "none";
+// }
 
-var slideIndex = 1;
-showSlides(slideIndex);
+// var slideIndex = 1;
+// showSlides(slideIndex);
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+// function plusSlides(n) {
+//   showSlides(slideIndex += n);
+// }
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+// function currentSlide(n) {
+//   showSlides(slideIndex = n);
+// }
 
-IMAGES = [["11.png", "12.png", "13.png", "14.png", "15.png", "16.png"], ["21.jpg"], ["31.jpeg"]];
-function initSlides(n){
-    imagesForModel = IMAGES[n+1];
-    for 
-    var slides = document.getElementsByClassName("mySlides"); 
-    var modelContent = document.getElementById
+// IMAGES = [["11.png", "12.png", "13.png", "14.png", "15.png", "16.png"], ["21.jpg"], ["31.jpeg"]];
+// function initSlides(n){
+//     imagesForModel = IMAGES[n+1];
+//     for 
+//     var slides = document.getElementsByClassName("mySlides"); 
+//     var modelContent = document.getElementById
 
-    for (i=0; i<imagesForModel.length; i++){
-        var s = "<div class=\"mySlides\"> <div class=\"numbertext\">1 / " + String.parseInt(i+1) + " </div> <img src=\"" + imagesForModel[i] + "\" style=\"width:100%\"> </div>"
-        modelContent.appendChild(s);
-    }
+//     for (i=0; i<imagesForModel.length; i++){
+//         var s = "<div class=\"mySlides\"> <div class=\"numbertext\">1 / " + String.parseInt(i+1) + " </div> <img src=\"" + imagesForModel[i] + "\" style=\"width:100%\"> </div>"
+//         modelContent.appendChild(s);
+//     }
 
 
-}
+// }
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  var captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
-}
+// function showSlides(n) {
+//   var i;
+//   var slides = document.getElementsByClassName("mySlides");
+//   var dots = document.getElementsByClassName("demo");
+//   var captionText = document.getElementById("caption");
+//   if (n > slides.length) {slideIndex = 1}
+//   if (n < 1) {slideIndex = slides.length}
+//   for (i = 0; i < slides.length; i++) {
+//       slides[i].style.display = "none";
+//   }
+//   for (i = 0; i < dots.length; i++) {
+//       dots[i].className = dots[i].className.replace(" active", "");
+//   }
+//   slides[slideIndex-1].style.display = "block";
+//   dots[slideIndex-1].className += " active";
+//   captionText.innerHTML = dots[slideIndex-1].alt;
+// }
 
 
 
