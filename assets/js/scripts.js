@@ -240,7 +240,7 @@ jQuery(function ($) {
         title: 'AnyFood WebApp - a surprise food delivery platform'
       },
       {
-        src: "assets/images/works/22.png",
+        src: "assets/images/works/22.PNG",
         title: 'Landing page'
       },
       {
@@ -268,19 +268,19 @@ jQuery(function ($) {
         title: 'ShareIt WebApp - a platform to loan and borrow items'
       },
       {
-        src: "assets/images/works/32.png",
+        src: "assets/images/works/32.PNG",
         title: 'Available Categories'
       },
       {
-        src: "assets/images/works/33.png", // Dynamically created element
+        src: "assets/images/works/33.PNG", // Dynamically created element
         title: 'Some of the existing Items'
       },
       {
-        src: "assets/images/works/34.png", // HTML string
+        src: "assets/images/works/34.PNG", // HTML string
         title: 'Item Display Page'
       },
       {
-        src: "assets/images/works/35.png", // CSS selector of an element on page that should be used as a popup
+        src: "assets/images/works/35.PNG", // CSS selector of an element on page that should be used as a popup
         title: 'Profile Page'
       }
     ],
